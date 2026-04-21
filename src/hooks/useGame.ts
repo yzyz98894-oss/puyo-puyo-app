@@ -5,7 +5,7 @@ import { createEmptyBoard, applyGravity } from '@/lib/board';
 import { createTsumo, moveTsumo, rotateTsumo, lockTsumo, hardDrop, isValidPosition, getTsumoPositions } from '@/lib/tsumo';
 import { findClearGroups, clearGroups, calcScore, getAllClearingPositions } from '@/lib/clear';
 import { SPAWN_COL, SPAWN_ROW } from '@/lib/constants';
-import type { GameState, Tsumo } from '@/lib/types';
+import type { GameState, GamePhase, Tsumo } from '@/lib/types';
 
 type Action =
   | { type: 'START' }
